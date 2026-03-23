@@ -1,0 +1,70 @@
+
+--- Customer Order Analysis Report ---
+
+List of customers: Nikhil, Krishna, Radha, Gaura, Nitai
+
+Order details:
+Customer   | Product         |  Price | Category        
+-------------------------------------------------------
+Nikhil     | Pen             | $   20 | Office Supply   
+Nikhil     | Erasers         | $   20 | Office Supply   
+Krishna    | Camera          | $   25 | Electronics     
+Krishna    | SD Card         | $   15 | Electronics     
+Radha      | Milk            | $    3 | Groceries       
+Gaura      | Filtered Water  | $   10 | Groceries       
+Nitai      | Bhagavad Gita   | $   20 | Books           
+Nikhil     | T-shirt         | $   40 | Clothing        
+Krishna    | Jeans           | $   60 | Clothing        
+Radha      | Headphones      | $   80 | Electronics     
+Gaura      | Notebook        | $    5 | Office Supply   
+Nitai      | Lamp            | $   30 | Home Essentials 
+
+Products each customer has ordered:
+Nikhil    : Pen, Erasers, T-shirt
+Krishna   : Camera, SD Card, Jeans
+Radha     : Milk, Headphones
+Gaura     : Filtered Water, Notebook
+Nitai     : Bhagavad Gita, Lamp
+
+Available product categories:
+- Books
+- Clothing
+- Electronics
+- Groceries
+- Home Essentials
+- Office Supply
+
+Customer spending and classification:
+Customer   | Total Spent | Classification
+----------------------------------------
+Nikhil     | $        80 | Moderate    
+Krishna    | $       100 | Moderate    
+Radha      | $        83 | Moderate    
+Gaura      | $        15 | Low-value   
+Nitai      | $        50 | Moderate    
+
+Total revenue per product category:
+Category         |  Revenue
+----------------------------
+Office Supply    | $     45
+Electronics      | $    120
+Groceries        | $     13
+Books            | $     20
+Clothing         | $    100
+Home Essentials  | $     30
+
+Unique products sold: Bhagavad Gita, Camera, Erasers, Filtered Water, Headphones, Jeans, Lamp, Milk, Notebook, Pen, SD Card, T-shirt
+
+Customers who purchased Electronics: Krishna, Radha
+
+Top 3 highest-spending customers:
+Krishna: $100
+Radha: $83
+Nikhil: $80
+
+Customers who purchased from multiple categories: Gaura, Krishna, Nikhil, Nitai, Radha
+
+Customers who bought both Electronics and Clothing: Krishna
+
+--- End of Report ---
+
