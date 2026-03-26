@@ -10,6 +10,7 @@ MODERATE_VALUE_THRESHOLD = 50
 from typing import List, Tuple, Dict, Set
 
 customers: List[str] = ["Nikhil", "Krishna", "Radha", "Gaura", "Nitai"]
+
 order_details: List[Tuple[str, str, int, str]] = [
     ("Nikhil", "Pen", 20, "Office Supply"),
     ("Nikhil", "Erasers", 20, "Office Supply"),
@@ -26,12 +27,12 @@ order_details: List[Tuple[str, str, int, str]] = [
 ]
 
 
-# Build customer to products dictionary
+# Build customer to products dictionary - Task 2.1
 cust_products: Dict[str, List[str]] = {}
 for name, product, price, category in order_details:
     cust_products.setdefault(name, []).append(product)
 
-# Build product to category mapping
+# Build product to category mapping - Task 2.2
 product_to_category: Dict[str, str] = {}
 for _, product, _, category in order_details:
     product_to_category[product] = category
