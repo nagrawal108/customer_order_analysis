@@ -75,8 +75,11 @@ for customer, orders in customer_orders.items():
 #Use a dictionary to map each product to its respective category
 product_categories = {}
 for order in orders:
-    _, product, _, category = order
-    product_categories[product] = category
+    if len(order) == 4:
+        _, product, _, category = order
+        product_categories[product] = category
+    else:
+        print(f"Warning: Skipping malformed order (expected 4 elements): {order}")
 
 #print the dictionary
 print("\nProduct Categories Dictionary:")
