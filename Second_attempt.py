@@ -1,30 +1,36 @@
-#Create a list of customers
+# Create a list of customers
 
-#Task 1: Data Preparation
+# Task 1: Data Preparation
 customers = [
-	"Alice",
-	"Bob",
-	"Charlie",
-	"Diana",
-	"Ethan",
-	"Fiona",
-	"George",
-	"Hannah",
-	"Ian",
-	"Julia",
-	"Kevin",
-	"Laura",
-	"Michael",
-	"Nina",
-	"Oscar",
-	"Paula"
+    "Alice",
+    "Bob",
+    "Charlie",
+    "Diana",
+    "Ethan",
+    "Fiona",
+    "George",
+    "Hannah",
+    "Ian",
+    "Julia",
+    "Kevin",
+    "Laura",
+    "Michael",
+    "Nina",
+    "Oscar",
+    "Paula"
 ]
 
-#Print the list of customers
-print("List of customers:")
-for customer in customers:
-    print(customer)
-    
+
+## Function to print the list of customers
+def print_customers(customers_list):
+    if not customers_list:
+        print("No customers found.")
+        return
+    print(f"List of customers (Total: {len(customers_list)}):")
+    for idx, customer in enumerate(customers_list, 1):
+        print(f"{idx}. {customer}")
+
+print_customers(customers)
 
 #Store each customer's order details (customer name, product, price, category) as tuples inside a list
 orders = [
